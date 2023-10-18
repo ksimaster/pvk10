@@ -21,16 +21,16 @@ public class UIManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {   
-        uiState = 0;
+        uiState = 3;
         getMenus();
         changeMenu();
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        showHideInGameMenu();
-    }
+   // void Update()
+   // {
+    //    showHideInGameMenu();
+  //  }
 
     //Make deactive all menus except the opening one
     public void changeMenu(){
@@ -71,15 +71,15 @@ public class UIManager : MonoBehaviour
     }
 
     //If 'ESC' is pressed when playing match show  a menu which we can return home or save game
-    private void showHideInGameMenu(){
-        if(Input.GetKeyDown(KeyCode.Escape) && (uiState == -1 || uiState == 4)){
-            if(menus[4].activeSelf == true)
-                uiState = -1;
-            else
-                uiState = 4;
-        }
-        changeMenu();
-    }
+//    private void showHideInGameMenu(){
+  //      if(Input.GetKeyDown(KeyCode.Escape) && (uiState == -1 || uiState == 4)){
+    //        if(menus[4].activeSelf == true)
+    //            uiState = -1;
+    //        else
+     //           uiState = 4;
+   //     }
+    //    changeMenu();
+  //  }
 
     //Change position of score menu to see board
     public void showHideScoreMenu(){
