@@ -80,8 +80,8 @@ public class GameManager : MonoBehaviour
 
 
             //If player is computer
-            if(gameData.getPlayerType() == 0)
-                generateMovement();
+          //  if(gameData.getPlayerType() == 0)
+            //    generateMovement();
             
 
             //If cell and peg is selected
@@ -478,11 +478,11 @@ public class GameManager : MonoBehaviour
                         break;
 
                     case "playerType":
-                        gameData.setPlayerType(data.Split(':')[1][0] - '0');
+                        gameData.setPlayerType(data.Split(':')[1][0] - '1');
                         break;
 
                     case "boardType":
-                        gameData.setBoardType(data.Split(':')[1][0] - '0');
+                        gameData.setBoardType(data.Split(':')[1][0] - '1');
                         break;
 
                     case "spawnStartPoint":
