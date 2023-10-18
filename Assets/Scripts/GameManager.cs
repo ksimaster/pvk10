@@ -285,6 +285,7 @@ public class GameManager : MonoBehaviour
     
     //Move peg
     private void movePeg(){
+        Debug.Log("movePeg работает!");
         int[] position = new int[2];
         GameObject[] spawnedPegs = GameObject.FindGameObjectsWithTag("Peg");
 
@@ -327,6 +328,7 @@ public class GameManager : MonoBehaviour
     
     //Check the game is finished
     private void checkIsGameFinished(){
+        Debug.Log("Запущен метод checkIsGameFinished");
         int vertical = gameData.getBoard().Count;
         int horizontal = gameData.getBoard()[0].Count;
         bool isFinish = true;
