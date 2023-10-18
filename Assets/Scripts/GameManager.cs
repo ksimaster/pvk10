@@ -79,7 +79,7 @@ public class GameManager : MonoBehaviour
             }
 
 
-            //If player is computer
+          //  If player is computer
           //  if(gameData.getPlayerType() == 0)
             //    generateMovement();
             
@@ -134,7 +134,7 @@ public class GameManager : MonoBehaviour
                 };
                 
                 //Board is too big so change start corner rather than 0,0,0 to fit in world
-                gameData.setSpawnStartPoint(new Vector3(-1.3f,0,-0.6f));
+               gameData.setSpawnStartPoint(new Vector3(-1.3f,0,-0.6f));
                 gameData.setBoard(board2);
                 break;
             
@@ -152,7 +152,7 @@ public class GameManager : MonoBehaviour
                 };
 
                 //Board is too big so change start corner rather than 0,0,0 to fit in world
-                gameData.setSpawnStartPoint(new Vector3(0,0,-0.6f));
+              gameData.setSpawnStartPoint(new Vector3(0,0,-0.6f));
                 gameData.setBoard(board3);
                 break;
             
@@ -184,7 +184,7 @@ public class GameManager : MonoBehaviour
                 };
                 
                 //Board is too big so change start corner rather than 0,0,0 to fit in world
-                gameData.setSpawnStartPoint(new Vector3(-1.3f,0,-0.6f));
+               gameData.setSpawnStartPoint(new Vector3(-1.3f,0,-0.6f));
                 gameData.setBoard(board5);
                 break;
         }
