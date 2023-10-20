@@ -134,7 +134,7 @@ public class GameManager : MonoBehaviour
                 };
                 
                 //Board is too big so change start corner rather than 0,0,0 to fit in world
-               gameData.setSpawnStartPoint(new Vector3(-1.3f,0,-0.6f));
+              // gameData.setSpawnStartPoint(new Vector3(-1.3f,0,-0.6f));
                 gameData.setBoard(board2);
                 break;
             
@@ -152,7 +152,7 @@ public class GameManager : MonoBehaviour
                 };
 
                 //Board is too big so change start corner rather than 0,0,0 to fit in world
-              gameData.setSpawnStartPoint(new Vector3(0,0,-0.6f));
+             // gameData.setSpawnStartPoint(new Vector3(0,0,-0.6f));
                 gameData.setBoard(board3);
                 break;
             
@@ -184,7 +184,7 @@ public class GameManager : MonoBehaviour
                 };
                 
                 //Board is too big so change start corner rather than 0,0,0 to fit in world
-               gameData.setSpawnStartPoint(new Vector3(-1.3f,0,-0.6f));
+               //gameData.setSpawnStartPoint(new Vector3(-1.3f,0,-0.6f));
                 gameData.setBoard(board5);
                 break;
         }
@@ -326,7 +326,7 @@ public class GameManager : MonoBehaviour
         middleCellLocation = Vector3.negativeInfinity;
     }
     
-    //Check the game is finished
+    //Check the game is finished  длолвоалды
     private void checkIsGameFinished(){
         Debug.Log("Запущен метод checkIsGameFinished");
         int vertical = gameData.getBoard().Count;
